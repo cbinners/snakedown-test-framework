@@ -23,7 +23,7 @@ describe('All Snake Tests', function() {
           );
 
           // Send our request!
-          fetch('http://localhost:9000/move', {
+          fetch(`${HOST}/move`, {
             method: 'post',
             body: data,
             headers: { 'Content-Type': 'application/json' }
